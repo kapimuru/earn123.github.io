@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natchawee Ponjaroenpunyakul — Portfolio</title>
+  <meta name="description" content="Projects in IIoT, Automation, AI/ML, Robotics, and Coding" />
+  <style>
+    :root{--bg:#0b0f14;--card:#121821;--text:#e6edf3;--muted:#9db2c5;--accent:#27e1a3;--line:#1b2430}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:linear-gradient(120deg,#0b0f14,#0e1420 60%,#0b0f14);color:var(--text)}
+    .wrap{max-width:1000px;margin:0 auto;padding:32px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:16px;background:#182230;display:grid;place-items:center;border:1px solid var(--line)}
+    .avatar span{font-weight:700;color:var(--accent)}
+    h1{font-size:28px;margin:0}
+    .tagline{color:var(--muted);margin-top:6px}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:10px 14px;border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none}
+    nav a:hover{border-color:var(--accent)}
+
+    .section{margin-top:28px}
+    .section h2{font-size:20px;margin:0 0 12px 0;color:#cfe6f7}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-height:220px}
+    .card .thumb{height:140px;background:#0f1724;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}
+    .card .thumb img{max-width:100%;max-height:100%}
+    .card .body{padding:14px;display:flex;flex-direction:column;gap:8px}
+    .card h3{margin:0;font-size:16px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{font-size:12px;border:1px solid var(--line);padding:4px 8px;border-radius:999px;color:var(--muted)}
+    .links{margin-top:auto;display:flex;gap:10px}
+    .button{display:inline-block;padding:8px 12px;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:var(--text)}
+    .button:hover{border-color:var(--accent)}
+
+    .about{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+    @media (max-width:900px){.about{grid-template-columns:1fr}}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    footer{margin-top:28px;padding-top:16px;border-top:1px dashed var(--line);color:var(--muted);font-size:14px}
+    .accent{color:var(--accent)}
+    .small{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar"><span>NP</span></div>
+        <div>
+          <h1>Natchawee Ponjaroenpunyakul (Earn)</h1>
+          <div class="tagline">Automation & IIoT • AI/ML • Robotics • Coding</div>
+          <div class="small">Email: natchawee.earn@gmail.com · Phone: 061-789-0442 · Thailand</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/natchawee-earn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div id="cards" class="grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="panel">
+        <h2>About Me</h2>
+        <p>
+          Engineer with hands-on experience in <span class="accent">Industrial IoT, PLC/SCADA, Node‑RED, N3uron, Modbus, OPC UA</span>, and data
+          visualization (Metabase, Chart.js). Comfortable with Python for AI/ML and data processing.
+        </p>
+        <p>
+          Passionate about bridging OT–IT and building real-time monitoring systems. Fast learner with strong problem‑solving and communication skills.
+        </p>
+      </div>
+      <div class="panel">
+        <h2>Skills</h2>
+        <ul>
+          <li>Automation & IIoT: PLC (Siemens S7/TIA), Node‑RED, N3uron, MQTT, Modbus, OPC UA</li>
+          <li>Programming: Python, SQL (MySQL/PostgreSQL), Git/GitHub</li>
+          <li>Robotics: ABB, Sensors, Pneumatics</li>
+          <li>Data Viz: Metabase, Grafana, Chart.js</li>
+          <li>CAD: SolidWorks, AutoCAD (Basic)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="panel">
+        <p>Open to Automation/IIoT, Embedded, and Data Engineering roles. For collaboration, email <a class="accent" href="mailto:natchawee.earn@gmail.com">natchawee.earn@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Natchawee Ponjaroenpunyakul · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <!-- ===== Editable data: update your projects here ===== -->
+  <script>
+    const projects = [
+      {
+        title: "Real-time Monitoring and Data Logging for ABB Robots via IoT Gateway",
+        desc: "IoT Gateway + Mosquitto MQTT + Node-RED dashboard with Google Sheets integration.",
+        tags: ["MQTT","Node-RED","Google API"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=ABB+Robot+IoT"
+      },
+      {
+        title: "OPC UA → MySQL → Metabase",
+        desc: "Read EqvActivePower, TemperatureC, and Counter from OPC UA, process with Node‑RED, store in MySQL, and visualize in Metabase.",
+        tags: ["OPC UA","Node-RED","MySQL","Metabase"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=OPC+UA+Monitoring"
+      },
+      {
+        title: "Cattle Estrus Detection via CCTV and Machine Learning",
+        desc: "Computer vision pipeline to identify estrus behavior of cattle using CCTV feeds.",
+        tags: ["Computer Vision","Python","AI/ML"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Cattle+Detection"
+      },
+      {
+        title: "Water Quality Prediction Using Machine Learning",
+        desc: "ML modeling in Python to predict water quality metrics.",
+        tags: ["Python","AI/ML"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Water+Quality+ML"
+      },
+      {
+        title: "Face Detection-Based Automated Door Control System",
+        desc: "Face Recognition project for automated door access control.",
+        tags: ["Computer Vision","Python","Automation"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Face+Door+System"
+      },
+      {
+        title: "ABB Robot Arm Handwriting Program",
+        desc: "Path planning and control for ABB robot arm to write characters accurately.",
+        tags: ["Robotics","ABB","Motion"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=ABB+Handwriting"
+      },
+      {
+        title: "Booze Car — First Place Award-Winning Project",
+        desc: "Compact autonomous vehicle for nightlife convenience & safety (Innovation award).",
+        tags: ["Embedded","Automation","Award"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Booze+Car"
+      },
+      {
+        title: "7075 Aluminum Nanocomposites via Thixoforming",
+        desc: "Developed lightweight, high-strength nanocomposites for aerospace & automotive applications.",
+        tags: ["Materials","Manufacturing","Research"],
+        demo: "#",
+        code: "#",
+        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Nanocomposites"
+      }
+    ];
+
+    const container = document.getElementById('cards');
+    projects.forEach(p=>{
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="thumb">${p.image?`<img src="${p.image}" alt="${p.title}">`:'<div class="badge">No image</div>'}</div>
+        <div class="body">
+          <h3>${p.title}</h3>
+          <p class="small">${p.desc}</p>
+          <div class="badges">${p.tags.map(t=>`<span class="badge">${t}</span>`).join('')}</div>
+          <div class="links">${p.demo&&p.demo!=='#'?`<a class="button" href="${p.demo}" target="_blank" rel="noopener">Live</a>`:''}
+            ${p.code&&p.code!=='#'?`<a class="button" href="${p.code}" target="_blank" rel="noopener">Code</a>`:''}
+          </div>
+        </div>`;
+      container.appendChild(card);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
