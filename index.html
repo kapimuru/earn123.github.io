@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Natchawee Ponjaroenpunyakul — Portfolio</title>
-  <meta name="description" content="Projects in IIoT, Automation, AI/ML, Robotics, and Coding" />
+  <meta name="description" content="Projects in IIoT, Automation, AI/ML, Robotics, and Testing" />
   <style>
     :root{--bg:#0b0f14;--card:#121821;--text:#e6edf3;--muted:#9db2c5;--accent:#27e1a3;--line:#1b2430}
     *{box-sizing:border-box}
@@ -53,8 +53,8 @@
       <div class="brand">
         <div class="avatar"><span>NP</span></div>
         <div>
-          <h1>Natchawee Ponjaroenpunyakul (Earn)</h1>
-          <div class="tagline">Automation & IIoT • AI/ML • Robotics • Coding</div>
+          <h1>Natchawee Ponjaroenpunyakul</h1>
+          <div class="tagline">Automation & IIoT • Product Design & Manufacturing • Robotics • AI/ML</div>
           <div class="small">Email: natchawee.earn@gmail.com · Phone: 061-789-0442 · Thailand</div>
         </div>
       </div>
@@ -76,21 +76,28 @@
       <div class="panel">
         <h2>About Me</h2>
         <p>
-          Engineer with hands-on experience in <span class="accent">Industrial IoT, PLC/SCADA, Node‑RED, N3uron, Modbus, OPC UA</span>, and data
-          visualization (Metabase, Chart.js). Comfortable with Python for AI/ML and data processing.
+          Engineering graduate with a strong foundation in <span class="accent">automation systems, industrial IoT, and mechanical design</span>.
+          Hands-on experience in <span class="accent">CAD modeling (SolidWorks, AutoCAD)</span>, prototype development, and
+          real‑time data acquisition using IIoT gateways such as <span class="accent">Edge PRI200</span>.
+          Background in <span class="accent">materials & manufacturing research</span> (aluminium composites: ADC12/SiC)
+          through stir casting and powder metallurgy, with testing in <span class="accent">tensile, hardness, and microstructure</span>.
         </p>
         <p>
-          Passionate about bridging OT–IT and building real-time monitoring systems. Fast learner with strong problem‑solving and communication skills.
+          I connect <span class="accent">design → build → validate → release</span>: prepare drawings and BoMs, support prototype builds,
+          plan and run verification (fixtures/jigs, measurement plans, data logging), analyze results in Python/SQL, and
+          document findings for change control and manufacturing readiness. Strong collaboration with design, process, and
+          quality teams to deliver reliable and scalable hardware.
         </p>
       </div>
       <div class="panel">
         <h2>Skills</h2>
         <ul>
-          <li>Automation & IIoT: PLC (Siemens S7/TIA), Node‑RED, N3uron, MQTT, Modbus, OPC UA</li>
-          <li>Programming: Python, SQL (MySQL/PostgreSQL), Git/GitHub</li>
-          <li>Robotics: ABB, Sensors, Pneumatics</li>
-          <li>Data Viz: Metabase, Grafana, Chart.js</li>
-          <li>CAD: SolidWorks, AutoCAD (Basic)</li>
+          <li><b>CAD & Design</b>: SolidWorks, AutoCAD, 2D/3D Mechanical, Electrical Schematics</li>
+          <li><b>Manufacturing</b>: CNC Machining, Injection & Die Casting, Sheet Metal, Fixture & Jig Design</li>
+          <li><b>Materials & Testing</b>: Aluminium Composites (ADC12/SiC), Stir Casting, Powder Metallurgy, Tensile/Hardness, Microstructure</li>
+          <li><b>Hardware & Integration</b>: Electro-mechanical Design, Robotics & Sensors (ABB, Pneumatics), Edge PRI200 (IIoT)</li>
+          <li><b>Programming & Tools</b>: Python, MATLAB, SQL (MySQL/PostgreSQL), Git/GitHub, Grafana, Metabase, Chart.js</li>
+          <li><b>Automation & IIoT</b>: PLC (Siemens S7, TIA Portal, HMI), Node-RED, N3uron, Modbus TCP/IP, OPC UA, REST API</li>
         </ul>
       </div>
     </section>
@@ -98,7 +105,7 @@
     <section id="contact" class="section">
       <h2>Contact</h2>
       <div class="panel">
-        <p>Open to Automation/IIoT, Embedded, and Data Engineering roles. For collaboration, email <a class="accent" href="mailto:natchawee.earn@gmail.com">natchawee.earn@gmail.com</a>.</p>
+        <p>Open to roles across <span class="accent">hardware validation, prototype builds, design-for-manufacturing, and manufacturing ramp</span>, as well as Automation/IIoT integration. For collaboration, email <a class="accent" href="mailto:natchawee.earn@gmail.com">natchawee.earn@gmail.com</a>.</p>
       </div>
     </section>
 
@@ -107,72 +114,56 @@
     </footer>
   </div>
 
-  <!-- ===== Editable data: update your projects here ===== -->
   <script>
     const projects = [
       {
-        title: "Real-time Monitoring and Data Logging for ABB Robots via IoT Gateway",
-        desc: "IoT Gateway + Mosquitto MQTT + Node-RED dashboard with Google Sheets integration.",
-        tags: ["MQTT","Node-RED","Google API"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=ABB+Robot+IoT"
-      },
-      {
-        title: "OPC UA → MySQL → Metabase",
-        desc: "Read EqvActivePower, TemperatureC, and Counter from OPC UA, process with Node‑RED, store in MySQL, and visualize in Metabase.",
+        title: "OPC UA → MySQL → Metabase (IIoT Monitoring)",
+        desc: "Reads EqvActivePower/TemperatureC/Counter from OPC UA, processes in Node-RED, stores in MySQL, visualizes in Metabase for manufacturing monitoring & validation.",
+        bullets: ["Built data logger & aggregation (avg, delta, hourly)","Published a shareable dashboard for stakeholders"],
         tags: ["OPC UA","Node-RED","MySQL","Metabase"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=OPC+UA+Monitoring"
+        image: "images/opcua_metabase.png"
       },
       {
-        title: "Cattle Estrus Detection via CCTV and Machine Learning",
-        desc: "Computer vision pipeline to identify estrus behavior of cattle using CCTV feeds.",
+        title: "Cattle Estrus Detection via CCTV & Machine Learning",
+        desc: "Vision + ML pipeline detects estrus behavior from CCTV without physical sensors.",
+        bullets: ["Collected/annotated video frames; built CV pipeline in Python","Trained classifier; evaluated precision/recall; exported report"],
         tags: ["Computer Vision","Python","AI/ML"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Cattle+Detection"
+        image: "images/estrus.png"
       },
       {
         title: "Water Quality Prediction Using Machine Learning",
-        desc: "ML modeling in Python to predict water quality metrics.",
-        tags: ["Python","AI/ML"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Water+Quality+ML"
+        desc: "Predicts water-quality metrics from multi-factor inputs using Python ML.",
+        bullets: ["Data cleaning & feature engineering; train/val/test split","Compared models; shipped notebook + summary dashboard"],
+        tags: ["Python","AI/ML","Pandas"],
+        image: "images/water_quality.png"
       },
       {
-        title: "Face Detection-Based Automated Door Control System",
-        desc: "Face Recognition project for automated door access control.",
+        title: "Face Detection-Based Automated Door Control",
+        desc: "Secure access control using face recognition + GPIO relay.",
+        bullets: ["OpenCV face detection/recognition; debounce & timeout logic","Logged events; produced short acceptance report"],
         tags: ["Computer Vision","Python","Automation"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Face+Door+System"
+        image: "images/door_control.png"
       },
       {
         title: "ABB Robot Arm Handwriting Program",
-        desc: "Path planning and control for ABB robot arm to write characters accurately.",
+        desc: "Path planning and motion control to render characters with ABB arm.",
+        bullets: ["Generated strokes; tuned speed/zone; measured positional error","Documented test procedure and acceptance criteria"],
         tags: ["Robotics","ABB","Motion"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=ABB+Handwriting"
+        image: "images/abb_handwriting.png"
       },
       {
-        title: "Booze Car — First Place Award-Winning Project",
-        desc: "Compact autonomous vehicle for nightlife convenience & safety (Innovation award).",
+        title: "\"Booze Car\" – First-Prize Innovation Project",
+        desc: "Compact autonomous vehicle for nightlife convenience & safety.",
+        bullets: ["Integrated sensors, control, and chassis design","Prepared test plan; ran field tests; summarized results"],
         tags: ["Embedded","Automation","Award"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Booze+Car"
+        image: "images/booze_car.png"
       },
       {
         title: "7075 Aluminum Nanocomposites via Thixoforming",
-        desc: "Developed lightweight, high-strength nanocomposites for aerospace & automotive applications.",
+        desc: "Lightweight, high-strength nanocomposites for aerospace & automotive.",
+        bullets: ["Sample prep; tensile/hardness testing; microstructure (SEM/EDX)","Wrote lab report and compared against targets"],
         tags: ["Materials","Manufacturing","Research"],
-        demo: "#",
-        code: "#",
-        image: "https://dummyimage.com/640x360/0f1724/e6edf3.png&text=Nanocomposites"
+        image: "images/nano7075.png"
       }
     ];
 
@@ -185,10 +176,8 @@
         <div class="body">
           <h3>${p.title}</h3>
           <p class="small">${p.desc}</p>
+          ${p.bullets?`<ul class="small">${p.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>`:''}
           <div class="badges">${p.tags.map(t=>`<span class="badge">${t}</span>`).join('')}</div>
-          <div class="links">${p.demo&&p.demo!=='#'?`<a class="button" href="${p.demo}" target="_blank" rel="noopener">Live</a>`:''}
-            ${p.code&&p.code!=='#'?`<a class="button" href="${p.code}" target="_blank" rel="noopener">Code</a>`:''}
-          </div>
         </div>`;
       container.appendChild(card);
     });
